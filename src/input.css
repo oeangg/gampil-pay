@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tingginavbar: 80px;
+}
+
+body {
+  @apply bg-bgsatu font-Poppins text-gelap;
+}
+
+@media (max-width: 768px) {
+  .navigation-mobile {
+    top: var(--tingginavbar);
+    position: absolute;
+    right: 0px;
+    display: flex;
+    padding: 80px 60px;
+
+    background-color: #fbd4e9;
+
+    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0.95;
+    animation: fadein 0.4s forwards;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    100% {
+      opacity: 1;
+      width: 70%;
+      height: calc(100vh - var(--tingginavbar));
+    }
+  }
+
+  .navigation-mobile-effect {
+    animation: fadeout 400ms forwards;
+  }
+
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+      width: 100%;
+      height: calc(100vh - var(--tingginavbar));
+    }
+
+    100% {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+}
