@@ -2,60 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --tingginavbar: 80px;
-}
-
 body {
-  @apply bg-bgsatu font-Poppins text-gelap;
+  @apply bg-white;
 }
 
-@media (max-width: 768px) {
-  .navigation-mobile {
-    top: var(--tingginavbar);
-    position: absolute;
-    right: 0px;
-    display: flex;
-    padding: 80px 60px;
+.navbar-fixed {
+  @apply fixed z-[99999] bg-opacity-80;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
 
-    background-color: #fbd4e9;
+.hamburger-line {
+  @apply w-[30px] h-[3px] my-2 block bg-slate-700;
+}
 
-    gap: 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    opacity: 0.95;
-    animation: fadein 0.4s forwards;
-  }
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
 
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
 
-    100% {
-      opacity: 1;
-      width: 70%;
-      height: calc(100vh - var(--tingginavbar));
-    }
-  }
-
-  .navigation-mobile-effect {
-    animation: fadeout 400ms forwards;
-  }
-
-  @keyframes fadeout {
-    0% {
-      opacity: 1;
-      width: 100%;
-      height: calc(100vh - var(--tingginavbar));
-    }
-
-    100% {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-  }
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
 }

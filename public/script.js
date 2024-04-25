@@ -1,22 +1,22 @@
-const toggleMenu = () => {
-  const navigation = document.querySelector(".navigation");
-  const burgerMenu = document.querySelector(".menu-icon");
-  const src = burgerMenu.getAttribute("src");
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector("#nav-menu");
 
-  const isBurger = src === "public/img/hamburger-menu.svg";
-  const iconName = isBurger
-    ? "public/img/close-icon.svg"
-    : "public/img/hamburger-menu.svg";
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("hamburger-active");
+  navMenu.classList.toggle("hidden");
+});
 
-  burgerMenu.setAttribute("src", iconName);
+window.onscroll = function () {
+  const header = document.querySelector("header");
+  const posisiNav = header.offsetTop;
 
-  if (!isBurger) {
-    navigation.classList.add("navigation-mobile-effect");
-    setTimeout(() => {
-      navigation.classList.toggle("navigation-mobile");
-    }, 300);
+  if (window.scrollY > posisiNav) {
+    header.classList.add("navbar-fixed");
+
+    header.classList.remove("bg-transparent");
   } else {
-    navigation.classList.remove("navigation-mobile-effect");
-    navigation.classList.toggle("navigation-mobile");
+    header.classList.remove("navbar-fixed");
+
+    header.classList.add("bg-transparent");
   }
 };

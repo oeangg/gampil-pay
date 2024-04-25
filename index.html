@@ -1,12 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="public/img/gampil_pay_logo_60.png" />
-    <title>
-      Isi ulang Pulsa & Kouta Online - Mudah, Murah dan Meriah | Gampil Pay
-    </title>
+    <title>Gampil Pay, Solusi Pembayaran Digital</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,418 +18,150 @@
     ></script>
   </head>
   <body>
+    <!-- HEADER -->
     <header
-      class="fixed z-[9999] flex items-center top-0 left-0 w-full drop-shadow-md bg-bgsatu md:px-24"
+      class="flex items-center w-full bg-transparent absolute top-0 left-0 z-2 md:px-16"
     >
       <div class="container">
-        <div
-          class="navbar flex gap-4 flex-row justify-between items-center h-[80px]"
-        >
-          <div class="navbar-logo">
-            <a href="#home">
-              <picture>
-                <source
+        <div class="flex items-center relative font-Lora lg:justify-around">
+          <!-- Logo -->
+          <div class="px-4 py-4">
+            <a href="#tentang" class="flex justify-center items-center"
+              ><picture>
+                <!-- <source
                   media="(min-width:768px)"
                   srcset="public/img/gampil_pay_final_60.png"
-                />
+                /> -->
                 <img
                   src="public/img/gampil_pay_logo_60.png"
                   alt="Log gampil Pay"
                   sizes="60"
-                /> </picture
-            ></a>
+                />
+              </picture>
+              <span
+                class="p-2 text-2xl font-Lora font-bold text-primary hidden lg:flex xl:text-3xl"
+                >GampilPay</span
+              >
+            </a>
           </div>
-          <nav class="">
-            <img
-              class="menu-icon h-12 w-12 cursor-pointer md:hidden"
-              src="public/img/hamburger-menu.svg"
-              alt="Burger menu"
-              title="Burger menu"
-              onclick="toggleMenu(this)"
-            />
-            <ul
-              class="navigation text-base text-secondary font-normal hidden md:flex flex-row gap-4 lg:gap-6"
+
+          <!-- Menu -->
+          <div class="flex items-center">
+            <!-- Hamburger menu -->
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
             >
-              <li
-                class="group relative before:absolute before:inset-x-0 before:-bottom-1 before:h-1 before:origin-right before:scale-x-0 before:bg-primary before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
-              >
-                <a class="relative group-hover:text-primary" href="#home"
-                  >Home</a
-                >
-              </li>
+              <span
+                class="hamburger-line transition-all duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition-all duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition-all duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
 
-              <li
-                class="group relative before:absolute before:inset-x-0 before:-bottom-1 before:h-1 before:origin-right before:scale-x-0 before:bg-primary before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
-              >
-                <a class="relative group-hover:text-primary" href="#services"
-                  >Services</a
-                >
-              </li>
-              <li
-                class="group relative before:absolute before:inset-x-0 before:-bottom-1 before:h-1 before:origin-right before:scale-x-0 before:bg-primary before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
-              >
-                <a class="relative group-hover:text-primary" href="#why">Why</a>
-              </li>
-              <li
-                class="group relative before:absolute before:inset-x-0 before:-bottom-1 before:h-1 before:origin-right before:scale-x-0 before:bg-primary before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
-              >
-                <a class="relative group-hover:text-primary" href="#download"
-                  >Download</a
-                >
-              </li>
-              <li
-                class="group relative before:absolute before:inset-x-0 before:-bottom-1 before:h-1 before:origin-right before:scale-x-0 before:bg-primary before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
-              >
-                <a class="relative group-hover:text-primary" href="#testimonial"
-                  >Testimonial</a
-                >
-              </li>
-            </ul>
-          </nav>
+            <nav
+              id="nav-menu"
+              class="hidden absolute px-5 py-2 w-full shadow-lg bg-white top-full left-0 right-0 lg:static lg:block lg:max-w-full lg:bg-transparent lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#tentang"
+                    class="text-base text-coklatgelap py-5 mx-5 flex group-hover:text-secondary transition duration-700"
+                    >Tentang Kami</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#layanan"
+                    class="text-base text-coklatgelap py-5 mx-5 flex group-hover:text-secondary transition duration-700"
+                    >Produk & Layanan</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#mitra"
+                    class="text-base text-coklatgelap py-5 mx-5 flex group-hover:text-secondary transition duration-700"
+                    >Produk & Mitra</a
+                  >
+                </li>
+              </ul>
+              <div class="mt-16 lg:hidden">
+                <div class="w-full border-t-2 border-pink-200"></div>
 
-          <a
-            href=""
-            class="hidden px-6 py-2 text-xl font-medium text-secondary border-2 border-secondary rounded-3xl lg:block hover:bg-primary hover:text-bgsatu transition-all duration-500 ease-in-out"
-            >Contact Us</a
-          >
+                <span class="text-xs px-5 inline-block text-slate-300"
+                  >©️ 2024 by GampilPay Production</span
+                >
+              </div>
+            </nav>
+          </div>
+
+          <div class="hidden lg:block">
+            <a
+              href="#hubungikami"
+              class="text-lg text-primary border-2 border-primary rounded-full px-4 py-2 hover:bg-primary hover:text-bgsatu transition duration-700"
+              >Hubungi Kami</a
+            >
+          </div>
         </div>
       </div>
     </header>
+    <!-- END HEADER -->
 
-    <section class="bg-bgdua max-h-screen md:px-24" id="home">
+    <section class="mb-20 mt-16 md:px-24" id="tentang">
       <div class="container">
         <div
-          class="hero pt-24 p-2 flex flex-col gap-2 w-full min-h-screen justify-center items-center md:flex-row-reverse"
+          class="hero p-2 flex flex-col gap-2 w-full min-h-screen justify-center items-center lg:flex-row-reverse"
         >
           <div class="px-2 py-6">
             <picture>
               <source
                 media="(min-width:768px )"
-                srcset="public/img/mobile-pay_mid.png"
+                srcset="public/img/hero_800.jpg"
               />
-              <source
-                media="(min-width:1280px )"
-                srcset="public/img/mobile-pay_small.png"
-              />
+
               <img
-                src="public/img/mobile-pay_small.png"
+                src="public/img/hero_1024.jpg"
                 alt="mobile payment"
                 class="md:w-full"
               />
             </picture>
           </div>
-          <div class="md:basis-2/3 md:pr-5 lg:basis-2/3">
+          <div class="flex flex-wrap lg:pr-10 lg:basis-4/5 xl:basis-2/3">
             <h1
-              class="font-Lora text-2xl font-bold lg:text-3xl lg:font-extrabold"
+              class="font-Lora mb-4 text-slate-700 text-4xl font-bold text-center lg:text-left xl:text-5xl"
             >
-              Isi ulang Pulsa Murah & Mudah di
-              <span
-                class="text-primary font-Poppins text-2xl font-bold lg:text-3xl lg:font-extrabold"
-                >Gampil Pay</span
+              GampilPay,
+              <span class="text-slate-600 text-3xl xl:text-4xl"
+                >Solusi Pembayaran Digital</span
               >
             </h1>
-            <div
-              class="mt-1 border-2 w-24 border-primary lg:border-[3px]"
-            ></div>
+
             <p
-              class="py-4 text-base text-justify font-light lg:text-lg lg:font-"
+              class="pt-6 pb-2 text-base font-Lora text-slate-600 text-justify font-extralight md:text-lg md:font-light"
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-              distinctio harum expedita minus veritatis odio nulla illo
-              consectetur iste doloremque facere, libero aperiam ullam dolorum,
-              aliquid vel, nemo recusandae iusto.
+              GampilPay merupakan salah satu layanan integrasi dari
+              <span class="text-blue-400">PT.Cipta Multi Innovation</span> yang
+              merupakan perusahaan yang bergerak di bidang Teknologi Informasi.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="md:px-24">
-      <div class="container">
-        <div class="pt-28 flex justify-center items-center gap-2">
-          <div class="w-[15px] h-[15px] bg-secondary rounded-full"></div>
-          <h1
-            class="text-2xl text-primary font-Lora font-bold md:text-3xl md:font-extrabold"
-          >
-            Services & Fitur
-          </h1>
-          <div class="w-[15px] h-[15px] bg-secondary rounded-full"></div>
-        </div>
-
-        <div class="py-10 flex flex-wrap gap-4 justify-center">
-          <div
-            class="flex justify-center items-center flex-col p-8 w-[180px] h-[140px] shadow-xl rounded-md group hover:bg-bgdua transition-all duration-500 ease-in-out hover:border-secondary hover:border-2"
-          >
-            <img
-              src="public/img/phone.png"
-              alt="mobile phone"
-              class="h-14 group-hover:scale-110 transition-all duration-500 ease-in-out"
-            />
-            <h2
-              class="text-center text-base font-normal md:text-lg text-secondary group-hover:text-primary transition-all duration-500 ease-in-out"
+            <p
+              class="mb-10 text-base font-Lora text-justify text-slate-600 font-extralight md:text-lg md:font-light"
             >
-              Isi Pulsa
-            </h2>
-          </div>
-          <div
-            class="flex justify-center items-center flex-col p-8 w-[180px] h-[140px] shadow-xl rounded-md group hover:bg-bgdua transition-all duration-500 ease-in-out hover:border-secondary hover:border-2"
-          >
-            <img
-              src="public/img/paketdata.png"
-              alt="mobile phone"
-              class="h-14 group-hover:scale-110 transition-all duration-500 ease-in-out"
-            />
-            <h2
-              class="text-center text-base font-normal md:text-lg text-secondary group-hover:text-primary transition-all duration-500 ease-in-out"
-            >
-              Paket data
-            </h2>
-          </div>
-          <div
-            class="flex justify-center items-center flex-col p-8 w-[180px] h-[140px] shadow-xl rounded-md group hover:bg-bgdua transition-all duration-500 ease-in-out hover:border-secondary hover:border-2"
-          >
-            <img
-              src="public/img/listrik.png"
-              alt="mobile phone"
-              class="h-14 group-hover:scale-110 transition-all duration-500 ease-in-out"
-            />
-            <h2
-              class="text-center text-base font-normal md:text-lg text-secondary group-hover:text-primary transition-all duration-500 ease-in-out"
-            >
-              Listrik
-            </h2>
-          </div>
-          <div
-            class="flex justify-center items-center flex-col p-8 w-[180px] h-[140px] shadow-xl rounded-md group hover:bg-bgdua transition-all duration-500 ease-in-out hover:border-secondary hover:border-2"
-          >
-            <img
-              src="public/img/voucher.png"
-              alt="mobile phone"
-              class="h-14 group-hover:scale-110 transition-all duration-500 ease-in-out"
-            />
-            <h2
-              class="text-center text-base font-normal md:text-lg text-secondary group-hover:text-primary transition-all duration-500 ease-in-out"
-            >
-              Voucher
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="why" class="min-h-screen bg-bgdua pb-16 md:px-24">
-      <div class="container">
-        <div class="pt-28 flex gap-2 pb-4">
-          <h1
-            class="text-2xl text-secondary font-Lora font-bold md:text-3xl md:font-extrabold"
-          >
-            Kenapa <span class="text-primary font-Poppins">Gampil Pay?</span>
-          </h1>
-        </div>
-        <div class="flex flex-col gap-8 lg:flex-row">
-          <img src="public/img/pay.jpg" alt="pay mobile" />
-          <div class="flex flex-col gap-2">
-            <p class="text-base font-light text-justify text-gelap lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut
-              asperiores aut, reprehenderit officiis alias obcaecati. Ipsam fuga
-              nostrum perferendis, animi, cumque nemo officiis fugiat saepe
-              voluptate ea possimus aspernatur molestias omnis sed voluptatibus
-              vero? Dolorem id reiciendis dolores ab?
+              GampilPay lebih berfokus terhadap ekosistem pembayaran serta
+              menyediakan layanan untuk integrasi ke beberapa penerbit tagihan
+              dan solusi sistem yang disesuaikan kebutuhan mitra.
             </p>
-            <div class="border-2 w-4/5 border-pink-200"></div>
-            <div class="why-card mx-5 flex flex-row">
-              <div class="basis-[160px] flex justify-center items-center">
-                <img src="public/img/why-click.png" alt="" class="h-16 p-2" />
-              </div>
-              <div>
-                <h2 class="pt-2 text-xl font-medium text-third">One Click</h2>
-                <p class="text-sm font-light text-third pr-2 xl:w-2/3">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatum similique harum at!
-                </p>
-              </div>
-            </div>
-            <div class="border-2 w-4/5 border-pink-200"></div>
-            <div class="why-card mx-5 flex flex-row">
-              <div class="basis-[160px] flex justify-center items-center">
-                <img
-                  src="public/img/why-custservice.png"
-                  alt=""
-                  class="h-16 p-2"
-                />
-              </div>
-              <div>
-                <h2 class="pt-2 text-xl font-medium text-secondary">
-                  Customer Service
-                </h2>
-                <p class="text-sm font-light text-secondary pr-2 xl:w-2/3">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatum similique harum at!
-                </p>
-              </div>
-            </div>
-            <div class="border-2 w-4/5 border-pink-200"></div>
-            <div class="why-card mx-5 flex flex-row">
-              <div class="basis-[160px] flex justify-center items-center">
-                <img src="public/img/why-system.png" alt="" class="h-16 p-2" />
-              </div>
-              <div>
-                <h2 class="pt-2 text-xl font-medium text-primary">
-                  Security System
-                </h2>
-                <p class="text-sm font-light text-primary pr-2 xl:w-2/3">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatum similique harum at!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-slate-100 pb-16 md:px-24" id="download">
-      <div class="container">
-        <div class="pt-28 flex justify-center items-center flex-col gap-2 pb-4">
-          <h2
-            class="text-center text-lg font-Lora font-bold lg:text-2xl lg:font-extrabold"
-          >
-            Download Aplikasi
-            <span
-              class="text-primary text-xl font-Poppins lg:text-2xl lg:font-extrabold"
-              >Gampil Pay</span
+            <a
+              href=""
+              class="mx-auto px-12 py-4 text-xl font-normal font-Lora text-white bg-primary rounded-full hover:bg-secondary hover:text-bgsatu transition-all duration-500 ease-in-ou lg:mx-0"
+              >Hubungi Kami</a
             >
-          </h2>
-          <p class="pb-4 text-center text-base font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            expedita mollitia assumenda.
-          </p>
-          <div class="flex flex-row gap-3">
-            <img src="public/img/playstore.png" alt="playstore" width="60" />
-            <img
-              src="public/img/apple_store.png"
-              alt="apple store"
-              width="60"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonial" class="bg-bgdua pb-16 md:px-24">
-      <div class="container">
-        <div class="pt-28">
-          <h1
-            class="pb-6 text-center text-xl font-Lora font-bold lg:text-2xl lg:font-extrabold"
-          >
-            Testimonial
-          </h1>
-        </div>
-
-        <div
-          class="max-w-4xl mx-auto relative"
-          x-data="{
-          activeSlide : 1,
-          slides : [
-          { id: 1 , person: 'Anies Baswedan' , kota: 'Jakarta' , koment: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore nulla deserunt at cupiditate vel iusto eveniet. Nulla, maiores. Ipsa debitis ab explicabo nostrum excepturi voluptatem!'  },
-          { id: 2 , person: 'Cak Imin' , kota: 'Yogyakarta' , koment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis non aspernatur aperiam explicabo, atque debitis consectetur itaque, maiores sed cum officia ratione asperiores repudiandae voluptatem ducimus nam consequatur perferendis'  },
-          { id: 3 , person: 'Ganjar Pranomo' , kota: 'Semarang' , koment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro quaerat, perspiciatis illum fuga sapiente.'  },
-          { id: 4 , person: 'Mahpud Md' , kota: 'Bandung' , koment: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam itaque adipisci ad ratione fuga! Suscipit culpa laborum rem molestias, sint ipsa aliquam non eos veritatis quidem placeat error.'  },
-          { id: 5 , person: 'Prabowo Sugianto' , kota: 'Surabaya' , koment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia veniam, cupiditate nisi distinctio molestiae consectetur!'  },
-          ],
-          loop() {
-            setInterval ( () => {this.activeSlide = this.activeSlide === 5 ? 1 : this.activeSlide + 1 },2000)
-          }
-        }"
-          x-init="loop"
-        >
-          <!-- data loop -->
-
-          <template x-for="slide in slides" :key="slide.id">
-            <div
-              x-show="activeSlide === slide.id"
-              class="p-14 h-64 flex items-center bg-slate-300 text-third rounded-lg"
-            >
-              <div>
-                <h2
-                  class="font-bold font-Lora text-2xl"
-                  x-text="slide.person"
-                ></h2>
-                <h3
-                  class="font-normal text-xl font-Lora"
-                  x-text="slide.kota"
-                ></h3>
-                <div class="border-[1px] border-secondary w-20"></div>
-                <p
-                  class="pt-4 font-light text-sm leading-5"
-                  x-text="slide.koment"
-                ></p>
-              </div>
-            </div>
-          </template>
-
-          <!-- back/next -->
-          <div class="absolute inset-0 flex">
-            <div class="flex items-center justify-start w-1/2">
-              <button
-                x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1"
-                class="bg-pink-300 font-bold text-bgsatu w-12 h-12 rounded-full shadow flex items-center justify-center -ml-4 md:-ml-16 hover:bg-primary transition-all duration-500"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.75 19.5L8.25 12l7.5-7.5"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            <div class="flex items-center justify-end w-1/2">
-              <button
-                x-on:click="activeSlide = activeSlide ===  slides.length ? 1 : activeSlide + 1"
-                class="bg-pink-300 font-bold text-bgsatu w-12 h-12 rounded-full shadow flex items-center justify-center -mr-4 md:-mr-16 hover:bg-primary transition-all duration-500"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- button -->
-          <div
-            class="absolute w-full flex justify-center items-center px-4 py-4"
-          >
-            <template x-for="slide in slides" :key="slide.id">
-              <button
-                class="w-3 h-3 top-4 mx-2 mb-2 rounded-full overflow-hidden transition-colors duration-500 ease-out hover:bg-slate-400 hover:shadow-lg"
-                :class=" {
-                  'bg-primary' : activeSlide === slide.id,
-                  'bg-slate-300' : activeSlide !== slide.id,
-
-                }"
-                x-on:click="activeSlide = slide.id"
-              ></button>
-            </template>
           </div>
         </div>
       </div>
