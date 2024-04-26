@@ -20,7 +20,7 @@
   <body>
     <!-- HEADER -->
     <header
-      class="flex items-center w-full bg-transparent absolute top-0 left-0 z-2 md:px-16"
+      class="flex items-center w-full bg-white bg-transparent absolute top-0 left-0 z-2 md:px-16"
     >
       <div class="container">
         <div class="flex items-center relative font-Lora lg:justify-around">
@@ -115,7 +115,7 @@
     <!-- END HEADER -->
 
     <!-- HERO SECTION -->
-    <section class="mt-16 md:px-24" id="tentang">
+    <section class="mt-16 md:px-24 bg-white" id="tentang">
       <div class="container">
         <div
           class="hero p-2 flex flex-col gap-2 w-full min-h-screen justify-center items-center lg:flex-row-reverse"
@@ -170,14 +170,16 @@
     <!-- END HERO SECTION -->
 
     <!-- LAYANAN SECTION  -->
-    <section class="md:px-24" id="layanan">
+    <section class="md:px-24 pb-20" id="layanan">
       <div class="container">
         <div class="flex pt-28 pb-3 flex-col">
-          <h1 class="px-4 text-3xl text-center font-bold font-Lora md:text-4xl">
+          <h1
+            class="px-4 text-3xl text-center text-slate-700 font-bold font-Lora md:text-4xl"
+          >
             Produk & Layanan
           </h1>
           <p
-            class="px-4 text-center text-base font-Poppins font-light md:text-lg"
+            class="px-4 text-center text-base text-slate-600 font-Poppins font-light md:text-lg"
           >
             GampilPay menyediakan pilihan produk & layanan sesuai kebutuhan
             Anda.
@@ -249,35 +251,125 @@
     </section>
     <!-- END LAYANAN SECTION -->
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#60a5fa"
-        fill-opacity="1"
-        d="M0,64L1440,224L1440,320L0,320Z"
-      ></path>
-    </svg>
-
     <!-- LAYANAN MITRA  -->
-    <section class="bg-blue-400 md:px-24" id="mitra">
+    <section class="md:px-24" id="mitra">
       <div class="container">
-        <div class="flex pb-3 justify-center">
-          <h1
-            class="px-4 text-3xl text-slate-50 font-bold font-Lora md:text-4xl"
-          >
-            Produk & Mitra
-          </h1>
-          <p
-            class="px-4 text-center text-base font-Poppins font-light md:text-lg"
-          >
-            Berikut Produk & Mitra yang sudah bergabung bersama kami
-          </p>
+        <div class="pt-28 px-4 flex flex-col gap-10 md:flex-row">
+          <div class="flex md:w-1/2">
+            <div class="flex flex-col">
+              <h1
+                class="px-4 text-right text-3xl text-slate-700 font-bold font-Lora md:text-3xl lg:text-4xl"
+              >
+                Produk & Mitra
+              </h1>
+              <p
+                class="px-4 text-xs text-end text-slate-500 font-Poppins font-light lg:text-base"
+              >
+                Produk & Mitra yang sudah bergabung bersama kami
+              </p>
+            </div>
+            <div>
+              <span class="block h-14 w-2 bg-primary md:h-24"></span>
+            </div>
+          </div>
+          <div class="flex justify-center flex-wrap gap-2 md:gap-8">
+            <div
+              class="flex justify-center items-center flex-col w-44 h-36 p-2 rounded-3xl hover:shadow-lg group cursor-pointer"
+            >
+              <div class="flex">
+                <img width="60" src="public/img/pdam.png" alt="" />
+              </div>
+              <p
+                class="text-xs font-lora text-center font-normal p-2 text-slate-400 group-hover:text-slate-600"
+              >
+                Aplikasi Baca Meter PDAM Tirta Malem Karo Sumatera Utara
+              </p>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col w-44 h-36 p-2 rounded-3xl hover:shadow-lg group cursor-pointer"
+            >
+              <div class="flex">
+                <img width="60" src="public/img/payment.png" alt="" />
+              </div>
+              <p
+                class="text-xs font-lora text-center font-normal p-2 text-slate-400 group-hover:text-slate-600"
+              >
+                Host To Host Pembayaran Digital
+              </p>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col w-44 h-36 p-2 rounded-3xl hover:shadow-lg group cursor-pointer"
+            >
+              <div class="flex">
+                <img width="100" src="public/img/fortuna.png" alt="" />
+              </div>
+              <p
+                class="text-xs font-lora text-center font-normal p-2 text-slate-400 group-hover:text-slate-600"
+              >
+                PT. Tuas Mas Mandiri Digital Payment
+              </p>
+            </div>
+            <div
+              class="flex justify-center items-center flex-col w-44 h-36 p-2 rounded-3xl hover:shadow-lg group cursor-pointer"
+            >
+              <div class="flex">
+                <img width="100" src="public/img/fortuna.png" alt="" />
+              </div>
+              <p
+                class="text-xs font-lora text-center font-normal p-2 text-slate-400 group-hover:text-slate-600"
+              >
+                PT. Inacash Lentera Teknologi
+              </p>
+            </div>
+
+            <div
+              class="flex justify-center items-center flex-col w-44 h-36 p-2 rounded-3xl hover:shadow-lg group cursor-pointer"
+            >
+              <div class="flex">
+                <img width="100" src="public/img/fortuna.png" alt="" />
+              </div>
+              <p
+                class="text-xs font-lora text-center font-normal p-2 text-slate-400 group-hover:text-slate-600"
+              >
+                PT.Fortuna Mediatama
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- END MITRA SECTION -->
 
-    <section class="bg-blue-900 md:px-24">
-      <footer class="footer-atas border-b-[1px] border-slate-500">
+    <img src="public/img/wave.svg" alt="" />
+
+    <section class="md:px-24 bg-blue-900">
+      <div class="container">
+        <div class="flex pt-28 pb-3 flex-col">
+          <h1
+            class="px-4 text-3xl text-center text-slate-200 font-bold font-Lora md:text-4xl"
+          >
+            Testimonial Mitra
+          </h1>
+        </div>
+        <div class="flex justify-center pb-20">
+          <span class="block -mt-2 h-2 w-20 bg-primary"></span>
+        </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#1e3a8a"
+        fill-opacity="1"
+        d="M0,32L1440,192L1440,0L0,0Z"
+      ></path>
+    </svg>
+    <section class="md:px-24 bg-slate-100 pb-20">
+      <div class="container"></div>
+    </section>
+
+    <section class="bg-blue-900 md:px-24 border-t-8 border-primary">
+      <footer class="border-b-[1px] border-slate-400">
         <div class="container">
           <div
             class="pt-16 pb-8 px-7 flex flex-col justify-between gap-4 sm:flex-row"
@@ -411,10 +503,10 @@
 
       <footer class="footer-bawah pt-5 pb-16">
         <h2 class="text-center text-slate-200 text-xs font-light">
-          Design by Gampil Pay
+          ❤️ 2024 GampilPay,
         </h2>
         <p class="text-center text-xs text-slate-200 font-light">
-          copyright (c) 2023
+          All rights reserved.
         </p>
       </footer>
     </section>

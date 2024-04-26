@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white font-Poppins;
+  @apply bg-slate-100 font-Poppins;
 }
 
 .navbar-fixed {
